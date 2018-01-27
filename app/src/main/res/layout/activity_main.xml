@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="225dp"
+            android:layout_marginBottom="-150dp"
+            android:layout_weight="0">
+			<!-- 用户输入框 -->
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="220dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edit_login"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="60dp"
+                android:saveEnabled="true"
+                android:layout_alignLeft="@+id/login_password"
+                android:layout_alignStart="@+id/login_password"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignLeft="@id/login_username"
+                android:layout_alignTop="@id/login_username"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/login_user_icon" />
+			<!-- 密码输入框 -->
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="220dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edit_login"
+                android:hint="Password"
+                android:password="true"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/login_btn"
+                android:layout_alignEnd="@+id/login_btn" />
+
+            <ImageView
+                android:id="@+id/pwd_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignLeft="@id/login_password"
+                android:layout_alignTop="@id/login_password"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/login_pwd_icon" />
+
+            <ImageButton
+                android:id="@+id/login_btn"
+                android:layout_width="216dp"
+                android:layout_height="52dp"
+                android:layout_below="@id/login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_btn_bg" />
+
+            <TextView
+                android:id="@+id/login_btn_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/login_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
